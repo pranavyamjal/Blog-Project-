@@ -1,8 +1,16 @@
-# React + Vite
+# Blog Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack blog web application built with **React.js** for the front-end and **Appwrite** for backend services. The app allows users to create, edit, and delete blog posts, with secure authentication and database management.
 
-Currently, two official plugins are available:
+## Key Features:
+- **Authentication**: User signup, login, and logout functionality secured via Appwrite's authentication API.
+- **Blog Management**: Users can create, edit, and delete blog posts in real time, stored in Appwrite’s database.
+- **Form Handling**: Form inputs and validation are managed using **React Hook Form**, ensuring efficient and scalable form management.
+- **Appwrite Integration**: Utilizing Appwrite's serverless platform for authentication, database, and file storage.
+- **Responsive Design**: The UI is built with modern design principles, ensuring a smooth user experience across devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack:
+- **React.js**: For building the user interface and managing component state.
+- **React Hook Form**: For easy form management and validation.
+- **Appwrite**: Backend-as-a-service for authentication, database, and storage.
+- **Tailwind CSS** (optional): For styling components.
