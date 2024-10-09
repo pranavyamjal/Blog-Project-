@@ -11,6 +11,11 @@ export default function Post() {
     const navigate = useNavigate();
 
     const userData = useSelector((state) => state.auth.userData);
+    
+    
+    console.log("User Data:", userData);
+
+    
 
     const isAuthor = post && userData ? post.userId === userData.$id : false;
 
@@ -21,7 +26,7 @@ export default function Post() {
                 else navigate("/");
             });
         } else navigate("/");
-    }, [slug, navigate]);
+    }, [slug, userData, navigate]);
 
     const deletePost = () => {
         appwriteService.deletePost(post.$id).then((status) => {
